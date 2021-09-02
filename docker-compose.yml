@@ -1,0 +1,11 @@
+version: "3"
+services:
+  site:
+    build: site/
+    ports: 
+      - "8999:80"
+#    command: ./start.sh
+  figlet:
+    build: figlet/
+    command: figlet Hello
+#    command: ./start.sh
